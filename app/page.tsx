@@ -47,7 +47,7 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
         {blog_tiles.map((item) => {
           return (
-            <div className="lg:flex">
+            <div className="lg:flex" key={item.id}>
                 <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={item.image_url} alt={item.title}/>
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
                     <a href="" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
